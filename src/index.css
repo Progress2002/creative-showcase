@@ -74,7 +74,7 @@
   }
 
   .project-row {
-    @apply flex items-start gap-6 py-6 border-b border-border transition-colors hover:bg-secondary/30 px-2 -mx-2 rounded-sm;
+    @apply flex items-start gap-6 py-6 border-b border-border transition-colors  px-2 -mx-2 rounded-sm;
   }
 
   .project-number {
@@ -82,7 +82,7 @@
   }
 
   .tag {
-    @apply text-xs uppercase tracking-wider text-muted-foreground;
+    @apply text-[10px] uppercase tracking-wider text-muted-foreground;
   }
 
   .tag-separator {
@@ -111,4 +111,15 @@
   .animate-marquee {
     animation: marquee 25s linear infinite;
   }
+
+  @keyframes meteor {
+    0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(215deg); }
+    15% { opacity: 1; }
+    100% { opacity: 0; transform: translate3d(-80px, 80px, 0) rotate(215deg); }
+  }
+
+  .animate-meteor {
+    animation: meteor 8s linear infinite;
+  }
 }
+

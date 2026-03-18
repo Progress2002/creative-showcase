@@ -1,6 +1,7 @@
 ﻿import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Globe, List, LayoutGrid } from "lucide-react";
+import ProfilePic from "@/assets/images/me.jpeg";
 
 const projects = [
   {
@@ -11,6 +12,7 @@ const projects = [
     tags: ["React", "TypeScript", "Vite", "Supabase"],
     year: "2025",
     url: "https://progress.dev/insightflow",
+    imgSrc: ProfilePic,
   },
   {
     num: "02",
@@ -20,6 +22,7 @@ const projects = [
     tags: ["Fintech", "Design Systems", "Testing"],
     year: "2024",
     url: "https://progress.dev/atlas",
+    imgSrc: ProfilePic,
   },
   {
     num: "03",
@@ -29,6 +32,7 @@ const projects = [
     tags: ["Next.js", "CMS", "Tailwind"],
     year: "2023",
     url: "https://progress.dev/northwind",
+    imgSrc: ProfilePic,
   },
   {
     num: "04",
@@ -38,6 +42,7 @@ const projects = [
     tags: ["Docs", "React Query", "Elasticsearch"],
     year: "2024",
     url: "https://progress.dev/fieldguide",
+    imgSrc: ProfilePic,
   },
   {
     num: "05",
@@ -47,6 +52,7 @@ const projects = [
     tags: ["Design", "Storybook", "Accessibility"],
     year: "2022",
     url: "https://progress.dev/pulse",
+    imgSrc: ProfilePic,
   },
 ];
 
@@ -54,7 +60,9 @@ const Projects = () => {
   const [view, setView] = useState<"list" | "grid">("list");
 
   return (
-    <section id="projects" className="px-6 md:px-16 lg:px-24 max-w-5xl mx-auto py-20">
+    <section
+      id="projects"
+      className="px-6 md:px-16 lg:px-24 max-w-5xl mx-auto py-16">
       <div className="flex items-end justify-between mb-10">
         <div>
           <p className="section-label">Portfolio</p>
@@ -64,15 +72,13 @@ const Projects = () => {
           <button
             onClick={() => setView("list")}
             className={`p-2 rounded-lg transition-colors ${view === "list" ? "bg-accent text-foreground" : "text-muted-foreground hover:text-foreground"}`}
-            title="List view"
-          >
+            title="List view">
             <List className="w-4 h-4" />
           </button>
           <button
             onClick={() => setView("grid")}
             className={`p-2 rounded-lg transition-colors ${view === "grid" ? "bg-accent text-foreground" : "text-muted-foreground hover:text-foreground"}`}
-            title="Grid view"
-          >
+            title="Grid view">
             <LayoutGrid className="w-4 h-4" />
           </button>
         </div>
@@ -81,38 +87,43 @@ const Projects = () => {
       {view === "list" ? (
         <div className="space-y-0">
           {projects.map((project, i) => (
-            <motion.a
+            <motion.div
               key={project.num}
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-row group cursor-pointer block"
+              className="project-row  block"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.08, duration: 0.5 }}
-            >
-              <span className="project-number">{project.num}</span>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center justify-between mb-1">
-                  <h3 className="text-foreground font-medium group-hover:text-foreground/80 transition-colors">
-                    {project.title}
-                  </h3>
-                  <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors shrink-0 ml-4" />
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-3 max-w-xl">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap items-center gap-0">
-                  {project.tags.map((tag, j) => (
-                    <span key={tag}>
-                      <span className="tag">{tag}</span>
-                      {j < project.tags.length - 1 && <span className="tag-separator">•</span>}
-                    </span>
-                  ))}
+              transition={{ delay: i * 0.08, duration: 0.5 }}>
+              <div className="flex gap-5 md:gap-10 items-start">
+                <span className="project-number">{project.num}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="text-foreground/80 font-medium transition-colors">
+                      {project.title}
+                    </h3>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <ArrowUpRight className="w-4 h-4 text-muted-foreground hover:text-foreground/80 transition-colors " />
+                    </a>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3 max-w-xl">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap items-center gap-0">
+                    {project.tags.map((tag, j) => (
+                      <span key={tag}>
+                        <span className="tag">{tag}</span>
+                        {j < project.tags.length - 1 && (
+                          <span className="tag-separator">.</span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
       ) : (
@@ -124,24 +135,27 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.08, duration: 0.5 }}
-            >
-              <div className="aspect-video bg-secondary/60 border-b border-border flex items-center justify-center">
-                <span className="text-muted-foreground/40 text-sm font-mono">{project.title}</span>
+              transition={{ delay: i * 0.08, duration: 0.5 }}>
+              <div className="aspect-vide bg-secondary/60 border-b border-border flex items-center justify-center">
+                <img
+                  src={project.imgSrc}
+                  alt={project.title}
+                  className="h-44 w-full"
+                />
               </div>
 
-              <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-foreground font-semibold text-lg mb-1">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-1">{project.year}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+              <div className="px-6 py-2 flex flex-col flex-1">
+                <h3 className="text-foreground font-semibold text-lg mb-1">
+                  {project.title}
+                </h3>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-4 flex-1">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-5">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs px-3 py-1 rounded-full border border-border text-muted-foreground"
-                    >
+                      className="text-xs px-3 py-1 rounded-full border border-border text-muted-foreground">
                       {tag}
                     </span>
                   ))}
@@ -150,8 +164,7 @@ const Projects = () => {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full py-3 rounded-xl border border-border text-foreground text-sm font-medium hover:bg-secondary transition-colors"
-                >
+                  className="flex items-center justify-center gap-2 w-full py-2 rounded-xl border border-border bg-foreground text-background  text-sm font-medium hover:bg-foreground/90 transition-colors">
                   <Globe className="w-4 h-4" />
                   Website
                 </a>
