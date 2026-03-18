@@ -2,17 +2,17 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Globe, List, LayoutGrid } from "lucide-react";
 import ProfilePic from "@/assets/images/me.jpeg";
+import LbHfarmImg from "@/assets/images/lbH_Website.webp";
 
 const projects = [
   {
     num: "01",
-    title: "InsightFlow Analytics",
+    title: "LbHfarm",
     description:
-      "Self-serve analytics workspace that lets customer success teams build dashboards without touching SQL, complete with role-based sharing and metrics alerts.",
-    tags: ["React", "TypeScript", "Vite", "Supabase"],
-    year: "2025",
-    url: "https://progress.dev/insightflow",
-    imgSrc: ProfilePic,
+      "Official website of LbH, an  Agrotech cooporative that empowers smallholder farmers across Africa by providing crucial support services, including input financing, agronomy guidance, and access to ready markets upon harvest. ",
+    tags: ["React.js", "TypeScript", "Chakra UI"],
+    url: "https://www.lbhfarm.com/",
+    imgSrc: LbHfarmImg,
   },
   {
     num: "02",
@@ -20,7 +20,6 @@ const projects = [
     description:
       "Modernized the lending experience for a regional bank with a responsive borrower portal, document tracking, and an internal review console.",
     tags: ["Fintech", "Design Systems", "Testing"],
-    year: "2024",
     url: "https://progress.dev/atlas",
     imgSrc: ProfilePic,
   },
@@ -30,7 +29,6 @@ const projects = [
     description:
       "Composable storefront starter for brands launching limited collections. Includes product drops, waitlists, and content blocks managed in headless CMS.",
     tags: ["Next.js", "CMS", "Tailwind"],
-    year: "2023",
     url: "https://progress.dev/northwind",
     imgSrc: ProfilePic,
   },
@@ -40,7 +38,6 @@ const projects = [
     description:
       "Internal knowledge base that syncs with Slack and captures product decisions. Built opinionated editor blocks and granular search filters.",
     tags: ["Docs", "React Query", "Elasticsearch"],
-    year: "2024",
     url: "https://progress.dev/fieldguide",
     imgSrc: ProfilePic,
   },
@@ -50,7 +47,6 @@ const projects = [
     description:
       "A production-ready UI kit for fast-moving marketing teams. Includes themable tokens, 40+ components, and paired Figma styles.",
     tags: ["Design", "Storybook", "Accessibility"],
-    year: "2022",
     url: "https://progress.dev/pulse",
     imgSrc: ProfilePic,
   },

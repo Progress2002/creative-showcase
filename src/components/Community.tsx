@@ -22,7 +22,7 @@ const Community = () => {
 
           <h3 className="text-foreground font-medium">Community Engagement</h3>
           <p className="text-sm text-muted-foreground">
-            OCo-Lead: Cowrywise@BUK & GDG (Google Developers Group)
+            Co-Lead: GDG (Google Developers Group)
           </p>
         </div>
       </motion.div>

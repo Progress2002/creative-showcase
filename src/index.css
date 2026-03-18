@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
-@import url('https://fonts.cdnfonts.com/css/geist');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/geist");
 
 @tailwind base;
 @tailwind components;
@@ -37,8 +37,8 @@
 
     --radius: 0.75rem;
 
-    --font-sans: 'Geist', 'Raleway', 'Inter', system-ui, sans-serif;
-    --font-serif: 'Raleway', 'Geist', system-ui, sans-serif;
+    --font-sans: "Geist", "Raleway", "Inter", system-ui, sans-serif;
+    --font-serif: "Raleway", "Geist", system-ui, sans-serif;
 
     --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 0 0% 92%;
@@ -61,7 +61,12 @@
     font-family: var(--font-sans);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply tracking-tight;
     font-family: var(--font-serif);
   }
@@ -93,11 +98,11 @@
   }
 
   .nav-dock {
-    @apply fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 bg-secondary/80 backdrop-blur-xl border border-border rounded-2xl px-3 py-2;
+    @apply fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 bg-secondary/80 backdrop-blur-xl border border-border rounded-full px-3 py-1;
   }
 
   .nav-dock-item {
-    @apply p-2.5 rounded-xl text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-200;
+    @apply p-2.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-200;
   }
 
   .skill-marquee {
@@ -107,14 +112,16 @@
   .skill-pill {
     @apply inline-flex min-w-[150px] flex-shrink-0 items-center justify-center gap-2 rounded-full border border-border/50 bg-card/40 px-6 py-2.5 text-sm font-medium text-muted-foreground transition-colors duration-200 shadow-inner shadow-black/20 whitespace-nowrap;
   }
-
-
 }
 
 @layer utilities {
   @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
   .animate-marquee {
@@ -122,13 +129,20 @@
   }
 
   @keyframes meteor {
-    0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(215deg); }
-    15% { opacity: 1; }
-    100% { opacity: 0; transform: translate3d(-80px, 80px, 0) rotate(215deg); }
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 0, 0) rotate(215deg);
+    }
+    15% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate3d(-80px, 80px, 0) rotate(215deg);
+    }
   }
 
   .animate-meteor {
     animation: meteor 8s linear infinite;
   }
 }
-

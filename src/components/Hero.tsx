@@ -97,10 +97,10 @@ const Hero = () => {
           </DialogHeader>
           <div className="mt-4">
             <a
-              href="mailto:hello@progress.dev"
+              href="mailto:ezeamakachisom2002@gmail.com"
               className="flex items-center gap-3 text-foreground hover:text-foreground/80 transition-colors">
               <Mail className="w-5 h-5 text-muted-foreground" />
-              <span>hello@progress.dev</span>
+              <span>ezeamakachisom2002@gmail.com</span>
             </a>
           </div>
         </DialogContent>

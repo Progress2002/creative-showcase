@@ -1,19 +1,31 @@
-﻿import { Home, Briefcase, FolderOpen, BookOpen, Github, Linkedin } from "lucide-react";
+﻿import { Home, Briefcase, FolderOpen, BookOpen } from "lucide-react";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const navItems = [
   { icon: Home, href: "#home", label: "Home" },
   { icon: Briefcase, href: "#work", label: "Work" },
   { icon: FolderOpen, href: "#projects", label: "Projects" },
-  { icon: BookOpen, href: "#blog", label: "Blog" },
-  { icon: Github, href: "https://github.com/progress-dev", label: "GitHub", external: true },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/progress-okoro", label: "LinkedIn", external: true },
+  {
+    icon: FiGithub,
+    href: "https://github.com/Progress2002",
+    label: "GitHub",
+    external: true,
+  },
+  {
+    icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/in/progress-c-ezeamaka/",
+    label: "LinkedIn",
+    external: true,
+  },
+  {
+    icon: FaXTwitter,
+    href: "https://twitter.com/progress_dev",
+    label: "Twitter",
+    external: true,
+  },
 ];
-
-const XIcon = () => (
-  <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-  </svg>
-);
 
 const BottomNav = () => {
   return (
@@ -25,24 +37,12 @@ const BottomNav = () => {
           target={item.external ? "_blank" : undefined}
           rel={item.external ? "noopener noreferrer" : undefined}
           className="nav-dock-item"
-          title={item.label}
-        >
+          title={item.label}>
           <item.icon className="w-4 h-4" />
         </a>
       ))}
-      <a
-        href="https://x.com/progress_codes"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="nav-dock-item"
-        title="X / Twitter"
-      >
-        <XIcon />
-      </a>
     </nav>
   );
 };
 
 export default BottomNav;
-
-
