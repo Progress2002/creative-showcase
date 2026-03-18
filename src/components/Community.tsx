@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 
 const Community = () => {
   return (
@@ -14,13 +14,13 @@ const Community = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="w-10 h-10 rounded-lg bg-secondary border border-border flex items-center justify-center text-muted-foreground text-sm font-medium shrink-0">
-          B
+          U
         </div>
         <div>
-          <h3 className="text-foreground font-medium">Bayero University, Kano</h3>
-          <p className="text-sm text-muted-foreground mb-1">Community Engagement</p>
+          <h3 className="text-foreground font-medium">University of Lagos</h3>
+          <p className="text-sm text-muted-foreground mb-1">B.Sc. Computer Science, 2015 - 2019</p>
           <p className="text-sm text-muted-foreground">
-            Co-Lead: Cowrywise@BUK & GDG (Google Developers Group)
+            Organized the campus Frontend Circle meetup and mentored two GDG cohorts on design systems and accessibility.
           </p>
         </div>
       </motion.div>
@@ -29,3 +29,5 @@ const Community = () => {
 };
 
 export default Community;
+
+

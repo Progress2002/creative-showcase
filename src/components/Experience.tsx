@@ -1,63 +1,43 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 
 const experiences = [
   {
-    company: "Gbikna Limited",
+    company: "Brightside Labs",
     role: "Lead Frontend Engineer",
-    period: "July 2024 – Feb 2025",
+    period: "Apr 2024 - Present",
     bullets: [
-      "Directed the frontend redesign of a fintech administration platform and spearheaded crypto payment integrations.",
-      "Enhanced system security through the implementation of a robust Role-Based Access Control (RBAC) framework.",
+      "Own the web platform for a B2B AI copilot, guiding component architecture and pairing with design on accessibility reviews.",
+      "Reduced dashboard load times from 3.2s to 1.4s by trimming bundle size, code-splitting routes, and caching read-heavy queries.",
     ],
-    initial: "G",
+    initial: "B",
   },
   {
-    company: "Dokto (Contract)",
-    role: "Lead Frontend Engineer",
-    period: "June 2024 – July 2025",
+    company: "LumenPay",
+    role: "Senior Product Engineer",
+    period: "Jan 2023 - Mar 2024",
     bullets: [
-      "Engineered a high-performance telehealth platform focusing on sub-second load times and optimized user experiences.",
-      "Directed frontend architectural strategy and real-time data synchronization for a multi-disciplinary team.",
+      "Rebuilt the payments console in React and Tailwind, integrating audit trails and fine-grained permissions for ops teams.",
+      "Partnered with backend to introduce contract tests and a shared GraphQL schema, eliminating a class of regression bugs.",
     ],
-    initial: "D",
+    initial: "L",
   },
   {
-    company: "Schoolable HQ (YC W'19)",
+    company: "Northwind Studio",
     role: "Frontend Engineer",
-    period: "Nov 2023 – June 2024",
+    period: "Jun 2021 - Dec 2022",
     bullets: [
-      "Spearheaded the development of administrative interfaces with advanced data visualization techniques.",
-      "Collaborated on cross-functional architecture to ensure seamless service integration.",
+      "Delivered marketing sites and web apps for seed-stage startups, often embedded directly with founding teams.",
+      "Set up CI pipelines, Playwright smoke suites, and reusable UI primitives so small teams could scale safely.",
     ],
-    initial: "S",
+    initial: "N",
   },
   {
-    company: "Tranexx (Contract)",
-    role: "Frontend Developer",
-    period: "Jan 2024 – Mar 2024",
+    company: "Freelance",
+    role: "Product Designer & Developer",
+    period: "2019 - 2021",
     bullets: [
-      "Led the implementation of pixel-perfect marketing pages and a reusable design system.",
-      "Integrated real-time content delivery APIs and contributed to the fintech dashboard.",
-    ],
-    initial: "T",
-  },
-  {
-    company: "Collx",
-    role: "Software Engineer",
-    period: "Jan 2023 – Dec 2023",
-    bullets: [
-      "Implemented end-to-end event and account management solutions, optimizing page load speeds to under 3 seconds.",
-      "Led feature implementation integrating third-party APIs for enhanced automation.",
-    ],
-    initial: "C",
-  },
-  {
-    company: "Freelancer",
-    role: "Frontend Developer",
-    period: "Jan 2022 – Dec 2022",
-    bullets: [
-      "Delivered custom web solutions and led entire project lifecycles from conception to delivery.",
-      "Applied creative problem-solving to enhance project functionality and user experience.",
+      "Shipped end-to-end brand and web projects for agencies, from information architecture to responsive implementation.",
+      "Provided retainers to iterate on conversion experiments and interpret product analytics for non-technical stakeholders.",
     ],
     initial: "F",
   },
@@ -84,7 +64,9 @@ const Experience = () => {
             </div>
             <div className="flex-1">
               <h3 className="text-foreground font-medium">{exp.company}</h3>
-              <p className="text-sm text-muted-foreground mb-2">{exp.role} • {exp.period}</p>
+              <p className="text-sm text-muted-foreground mb-2">
+                {exp.role} • {exp.period}
+              </p>
               <ul className="space-y-1">
                 {exp.bullets.map((b, j) => (
                   <li key={j} className="text-sm text-muted-foreground leading-relaxed flex gap-2">
@@ -102,3 +84,5 @@ const Experience = () => {
 };
 
 export default Experience;
+
+

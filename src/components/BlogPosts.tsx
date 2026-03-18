@@ -1,51 +1,51 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const posts = [
   {
     num: "01",
-    title: "How I Built an Anti-Therapist AI to Tell People to \"Go Get a Job\"",
-    excerpt: "A deep dive into the architecture, prompt engineering, and sheer audacity of building an AI product designed to actively despise its users.",
-    date: "February 27, 2026",
-    readTime: "7 min read",
-    tags: ["AI", "Go"],
-    url: "https://www.xeuxdev.com/blog/building-zero-star-therapy",
+    title: "Shipping Design Systems Without Slowing the Roadmap",
+    excerpt: "Playbook for pairing foundations work with product delivery so stakeholders see value every sprint.",
+    date: "March 3, 2026",
+    readTime: "6 min read",
+    tags: ["Design Systems", "Team Process"],
+    url: "https://progress.dev/blog/design-systems-roadmap",
   },
   {
     num: "02",
-    title: "MindEase: Building an AI-Powered Mental Health Support Platform",
-    excerpt: "A comprehensive look at designing, architecting, and deploying a real-time therapeutic chatbot with crisis detection.",
-    date: "December 2, 2025",
-    readTime: "12 min read",
-    tags: ["AI", "Architecture"],
-    url: "https://www.xeuxdev.com/blog/mindease-ai-mental-health-platform",
+    title: "Reducing Bundle Size in a React 18 SaaS",
+    excerpt: "Profiling, message splitting, and shared dependency strategies that cut 47% from the initial payload.",
+    date: "January 20, 2026",
+    readTime: "8 min read",
+    tags: ["Performance", "React"],
+    url: "https://progress.dev/blog/react-performance",
   },
   {
     num: "03",
-    title: "Christmas Wish: Building a Festive Digital Card Platform With Next.js",
-    excerpt: "How I built a digital Christmas card platform using Next.js, allowing anyone to send beautifully crafted greetings.",
-    date: "December 25, 2023",
+    title: "What We Learned Pairing Designers and Engineers Each Tuesday",
+    excerpt: "Our small ritual for pairing on animations, review checklists, and writing more inclusive copy.",
+    date: "October 12, 2025",
     readTime: "5 min read",
-    tags: ["Next.js", "TypeScript"],
-    url: "https://www.xeuxdev.com/blog/building-christmas-wish-platform",
+    tags: ["Collaboration", "Culture"],
+    url: "https://progress.dev/blog/pairing-rituals",
   },
   {
     num: "04",
-    title: "Architecting a Resilient and Secure Enterprise Backend",
-    excerpt: "A deep dive into architectural design systems, data modeling strategies, and core engineering principles for enterprise backends.",
-    date: "October 10, 2024",
-    readTime: "8 min read",
-    tags: ["Architecture", "Backend"],
-    url: "https://www.xeuxdev.com/blog/architecting-resilient-secure-enterprise-backend",
+    title: "Turning Customer Interviews Into Product Experiments",
+    excerpt: "A repeatable loop for synthesizing interviews into measurable hypotheses your PM will actually back.",
+    date: "June 7, 2025",
+    readTime: "7 min read",
+    tags: ["Product", "Research"],
+    url: "https://progress.dev/blog/customer-research-loop",
   },
   {
     num: "05",
-    title: "TypeScript Patterns I Reach For Every Day in React",
-    excerpt: "After 4+ years of TypeScript in production React codebases, these are the patterns I install on day one of every new project.",
-    date: "May 12, 2024",
+    title: "A Practical Guide to Animations in Framer Motion",
+    excerpt: "How to move beyond fade-and-scale with staggered timelines, reduced motion fallbacks, and viewport triggers.",
+    date: "April 22, 2024",
     readTime: "9 min read",
-    tags: ["TypeScript", "React"],
-    url: "https://www.xeuxdev.com/blog/typescript-patterns-react",
+    tags: ["Framer Motion", "UI"],
+    url: "https://progress.dev/blog/framer-motion-guide",
   },
 ];
 
@@ -58,7 +58,7 @@ const BlogPosts = () => {
           <h2 className="section-heading">Selected Posts</h2>
         </div>
         <a
-          href="https://www.xeuxdev.com/blog"
+          href="https://progress.dev/blog"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -93,13 +93,13 @@ const BlogPosts = () => {
               </p>
               <div className="flex flex-wrap items-center gap-0">
                 <span className="tag">{post.date}</span>
-                <span className="tag-separator">·</span>
+                <span className="tag-separator">•</span>
                 <span className="tag">{post.readTime}</span>
-                <span className="tag-separator">·</span>
+                <span className="tag-separator">•</span>
                 {post.tags.map((tag, j) => (
                   <span key={tag}>
                     <span className="tag">{tag}</span>
-                    {j < post.tags.length - 1 && <span className="tag-separator">·</span>}
+                    {j < post.tags.length - 1 && <span className="tag-separator">•</span>}
                   </span>
                 ))}
               </div>
@@ -112,3 +112,5 @@ const BlogPosts = () => {
 };
 
 export default BlogPosts;
+
+

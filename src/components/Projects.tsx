@@ -1,47 +1,52 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Globe, List, LayoutGrid } from "lucide-react";
 
 const projects = [
   {
     num: "01",
-    title: "Zero-Star Therapy",
-    description: "A satirical AI web application that flips the script on modern 'therapy-speak' by acting as a deadpan, brutally honest 'anti-therapist'.",
-    tags: ["AI", "React 19", "Go", "Tailwind CSS"],
-    year: "2026",
-    url: "https://zerostar.xeuxdev.com/",
+    title: "InsightFlow Analytics",
+    description:
+      "Self-serve analytics workspace that lets customer success teams build dashboards without touching SQL, complete with role-based sharing and metrics alerts.",
+    tags: ["React", "TypeScript", "Vite", "Supabase"],
+    year: "2025",
+    url: "https://progress.dev/insightflow",
   },
   {
     num: "02",
-    title: "MindEase",
-    description: "A real-time AI mental health companion that provides accessible, culturally aware emotional support with streaming responses and crisis detection.",
-    tags: ["AI", "React", "Node.js", "Socket.IO"],
-    year: "2024 - Present",
-    url: "https://mindease.xeuxdev.com/",
+    title: "Atlas Lending",
+    description:
+      "Modernized the lending experience for a regional bank with a responsive borrower portal, document tracking, and an internal review console.",
+    tags: ["Fintech", "Design Systems", "Testing"],
+    year: "2024",
+    url: "https://progress.dev/atlas",
   },
   {
     num: "03",
-    title: "Queen Mother's Universal Foundation",
-    description: "Official website for QMUF, an NGO dedicated to community development, youth education, and sustainable support initiatives.",
-    tags: ["NGO", "Web Design", "Community"],
-    year: "2022 - Present",
-    url: "https://qmuf.org/",
+    title: "Northwind Commerce",
+    description:
+      "Composable storefront starter for brands launching limited collections. Includes product drops, waitlists, and content blocks managed in headless CMS.",
+    tags: ["Next.js", "CMS", "Tailwind"],
+    year: "2023",
+    url: "https://progress.dev/northwind",
   },
   {
     num: "04",
-    title: "QMUF Backend API",
-    description: "Scalable backend architecture and administrative system powering the QMUF platform, designed for secure role-based access and efficient data management.",
-    tags: ["NestJS", "Prisma", "PostgreSQL"],
-    year: "2024 - Present",
-    url: "https://qmuf.org/",
+    title: "FieldGuide",
+    description:
+      "Internal knowledge base that syncs with Slack and captures product decisions. Built opinionated editor blocks and granular search filters.",
+    tags: ["Docs", "React Query", "Elasticsearch"],
+    year: "2024",
+    url: "https://progress.dev/fieldguide",
   },
   {
     num: "05",
-    title: "Christmas Wish",
-    description: "A seasonal platform for creating and sharing personalized Christmas messages. Features a custom message editor, pre-defined templates, and audio attachment capabilities.",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    year: "2024",
-    url: "https://xmas-wish.vercel.app/",
+    title: "Pulse UI Kit",
+    description:
+      "A production-ready UI kit for fast-moving marketing teams. Includes themable tokens, 40+ components, and paired Figma styles.",
+    tags: ["Design", "Storybook", "Accessibility"],
+    year: "2022",
+    url: "https://progress.dev/pulse",
   },
 ];
 
@@ -102,7 +107,7 @@ const Projects = () => {
                   {project.tags.map((tag, j) => (
                     <span key={tag}>
                       <span className="tag">{tag}</span>
-                      {j < project.tags.length - 1 && <span className="tag-separator">·</span>}
+                      {j < project.tags.length - 1 && <span className="tag-separator">•</span>}
                     </span>
                   ))}
                 </div>
@@ -121,12 +126,10 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
             >
-              {/* Thumbnail placeholder */}
               <div className="aspect-video bg-secondary/60 border-b border-border flex items-center justify-center">
                 <span className="text-muted-foreground/40 text-sm font-mono">{project.title}</span>
               </div>
 
-              {/* Card content */}
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-foreground font-semibold text-lg mb-1">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mb-1">{project.year}</p>

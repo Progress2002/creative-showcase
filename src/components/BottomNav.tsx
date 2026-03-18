@@ -1,12 +1,12 @@
-import { Home, Briefcase, FolderOpen, BookOpen, Github, Linkedin } from "lucide-react";
+﻿import { Home, Briefcase, FolderOpen, BookOpen, Github, Linkedin } from "lucide-react";
 
 const navItems = [
   { icon: Home, href: "#home", label: "Home" },
   { icon: Briefcase, href: "#work", label: "Work" },
   { icon: FolderOpen, href: "#projects", label: "Projects" },
   { icon: BookOpen, href: "#blog", label: "Blog" },
-  { icon: Github, href: "https://github.com/xeuxdev", label: "GitHub", external: true },
-  { icon: Linkedin, href: "https://linkedin.com/in/xeuxdev", label: "LinkedIn", external: true },
+  { icon: Github, href: "https://github.com/progress-dev", label: "GitHub", external: true },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/progress-okoro", label: "LinkedIn", external: true },
 ];
 
 const XIcon = () => (
@@ -31,7 +31,7 @@ const BottomNav = () => {
         </a>
       ))}
       <a
-        href="https://x.com/xeuxdev"
+        href="https://x.com/progress_codes"
         target="_blank"
         rel="noopener noreferrer"
         className="nav-dock-item"
@@ -44,3 +44,5 @@ const BottomNav = () => {
 };
 
 export default BottomNav;
+
+

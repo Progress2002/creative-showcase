@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const Contact = () => {
@@ -13,24 +13,25 @@ const Contact = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        I'm open to new opportunities — whether it's a contract, full-time role, or an interesting project. My inbox is always open.
+        I'm currently partnering with SaaS and fintech teams on audits, design system work, and core product refreshes.
+        Send a note with a short brief and timeline, and I'll reply within two business days.
       </motion.p>
 
       <div className="flex items-center gap-6">
         <a
-          href="mailto:tochukwujohn24@gmail.com"
+          href="mailto:hello@progress.dev"
           className="flex items-center gap-1 text-foreground font-medium hover:text-foreground/80 transition-colors"
         >
           Say Hello
           <ArrowUpRight className="w-4 h-4" />
         </a>
         <a
-          href="https://x.com/xeuxdev"
+          href="https://x.com/progress_codes"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-colors"
         >
-          @xeuxdev
+          @progress_codes
         </a>
       </div>
     </section>
@@ -38,3 +39,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
