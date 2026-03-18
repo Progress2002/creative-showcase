@@ -5,19 +5,19 @@ const skills = [
 
 const SkillsMarquee = () => {
   return (
-    <section className="py-20 overflow-hidden">
+    <section className="py-20">
       <div className="px-6 md:px-16 lg:px-24 max-w-5xl mx-auto mb-8">
         <p className="section-label">Stack</p>
         <h2 className="section-heading">Skills</h2>
       </div>
 
-      <div className="relative">
-        <div className="flex overflow-hidden">
-          <div className="skill-marquee">
+      <div className="px-6 md:px-16 lg:px-24 max-w-5xl mx-auto overflow-hidden">
+        <div className="flex overflow-hidden group">
+          <div className="skill-marquee group-hover:[animation-play-state:paused]">
             {[...skills, ...skills, ...skills, ...skills].map((skill, i) => (
               <span
                 key={`${skill}-${i}`}
-                className="whitespace-nowrap text-lg md:text-xl text-muted-foreground/70 font-medium"
+                className="whitespace-nowrap text-sm md:text-base text-muted-foreground font-medium px-4 py-2 rounded-full border border-border"
               >
                 {skill}
               </span>
