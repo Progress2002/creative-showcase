@@ -17,7 +17,7 @@ const Community = () => {
             Bayero University, Kano
           </h3>
           <p className="text-sm text-muted-foreground mb-2">
-            B.Sc. Computer Science, 2015 - 2019
+            B.Sc. Computer Science, 2021 - 2026
           </p>
 
           <h3 className="text-foreground font-medium">Community Engagement</h3>
