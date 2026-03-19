@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-[70vh] flex flex-col justify-center px-6 md:px-16 lg:px-24 max-w-4xl mx-auto">
+      className="min-h-[90vh] md:imn-h-[60vh] lg:min-h-[70vh] flex flex-col justify-center px-6 md:px-16 lg:px-24 max-w-4xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
