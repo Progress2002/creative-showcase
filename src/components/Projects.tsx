@@ -1,53 +1,21 @@
-﻿import { useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Globe, List, LayoutGrid } from "lucide-react";
-import ProfilePic from "@/assets/images/me.jpeg";
-import LbHfarmImg from "@/assets/images/lbH_Website.webp";
-import BUKSOSImg from "@/assets/images/BUKSOS.webp";
-import GBAMImg from "@/assets/images/GBAM.webp";
-import Ecoprotin from "@/assets/images/ecoprotin.webp";
-
-const projects = [
-  {
-    num: "01",
-    title: "LbHfarm",
-    description:
-      "Official website of LbH, an  Agrotech cooporative that empowers smallholder farmers across Africa by providing crucial support services, including input financing, agronomy guidance, and access to ready markets upon harvest. ",
-    tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
-    url: "https://www.lbhfarm.com/",
-    imgSrc: LbHfarmImg,
-  },
-  {
-    num: "02",
-    title: "BUKSOS Security Operations System",
-    description:
-      "A lightweight incident reporting web app for BUK that allows students to report security concerns with precise location data via manual input or geolocation. Security officers can review reports, receive alerts, and navigate to incident locations through Google Maps for faster response.",
-    tags: ["React.js", "TypeScript", "Supabase"],
-    url: "https://security-alert-system.vercel.app/",
-    imgSrc: BUKSOSImg,
-  },
-  {
-    num: "03",
-    title: "GBAM - Graffiti Basketball, and Music",
-    description:
-      "Official website for GBAM, a platform that uses the power of sports, entertainment, and communication to create opportunities, promote peace, and strengthen ties across communities.",
-    tags: ["React.js", "Tailwind CSS", "Shadcn UI"],
-    url: "https://gbam.ng/",
-    imgSrc: GBAMImg,
-  },
-  {
-    num: "04",
-    title: "Ecoprotin",
-    description:
-      "Official website for Ecoprotin, a company that transforms organic waste into high-protein, eco-friendly feed for poultry, fish, and pigs, thus, creating climate-smart value chains and sustainable farming systems.",
-    tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
-    url: "https://www.ecoprotin.com/",
-    imgSrc: Ecoprotin,
-  },
-];
+import { projects } from "@/constant";
 
 const Projects = () => {
   const [view, setView] = useState<"list" | "grid">("list");
+
+  useEffect(() => {
+    const savedView = localStorage.getItem("projectsView");
+    if (savedView === "list" || savedView === "grid") {
+      setView(savedView);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("projectsView", view);
+  }, [view]);
 
   return (
     <section
