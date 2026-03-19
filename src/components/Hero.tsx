@@ -64,10 +64,10 @@ const Hero = () => {
         </div>
 
         <p className="text-lg  text-muted-foreground max-w-2xl leading-relaxed mb-8">
-          Frontend engineer focused on crafting resilient product experiences
-          for SaaS teams. I translate complex requirements into clear UX, ship
-          performant React interfaces, and partner closely with design and
-          platform teams.
+          Frontend Engineer passionate about building scalable, high-performance
+          web applications. I turn complex ideas into seamless, user-friendly
+          experiences and collaborate closely with teams to deliver impactful
+          digital products.
         </p>
 
         <div className="flex items-center gap-4">
