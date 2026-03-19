@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Globe, List, LayoutGrid } from "lucide-react";
 import ProfilePic from "@/assets/images/me.jpeg";
 import LbHfarmImg from "@/assets/images/lbH_Website.webp";
+import BUKSOSImg from "@/assets/images/BUKSOS.webp";
+import GBAMImg from "@/assets/images/GBAM.webp";
+import Ecoprotin from "@/assets/images/ecoprotin.webp";
 
 const projects = [
   {
@@ -10,45 +13,36 @@ const projects = [
     title: "LbHfarm",
     description:
       "Official website of LbH, an  Agrotech cooporative that empowers smallholder farmers across Africa by providing crucial support services, including input financing, agronomy guidance, and access to ready markets upon harvest. ",
-    tags: ["React.js", "TypeScript", "Chakra UI"],
+    tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
     url: "https://www.lbhfarm.com/",
     imgSrc: LbHfarmImg,
   },
   {
     num: "02",
-    title: "Atlas Lending",
+    title: "BUKSOS Security Operations System",
     description:
-      "Modernized the lending experience for a regional bank with a responsive borrower portal, document tracking, and an internal review console.",
-    tags: ["Fintech", "Design Systems", "Testing"],
-    url: "https://progress.dev/atlas",
-    imgSrc: ProfilePic,
+      "A lightweight incident reporting web app for BUK that allows students to report security concerns with precise location data via manual input or geolocation. Security officers can review reports, receive alerts, and navigate to incident locations through Google Maps for faster response.",
+    tags: ["React.js", "TypeScript", "Supabase"],
+    url: "https://security-alert-system.vercel.app/",
+    imgSrc: BUKSOSImg,
   },
   {
     num: "03",
-    title: "Northwind Commerce",
+    title: "GBAM - Graffiti Basketball, and Music",
     description:
-      "Composable storefront starter for brands launching limited collections. Includes product drops, waitlists, and content blocks managed in headless CMS.",
-    tags: ["Next.js", "CMS", "Tailwind"],
-    url: "https://progress.dev/northwind",
-    imgSrc: ProfilePic,
+      "Official website for GBAM, a platform that uses the power of sports, entertainment, and communication to create opportunities, promote peace, and strengthen ties across communities.",
+    tags: ["React.js", "Tailwind CSS", "Shadcn UI"],
+    url: "https://gbam.ng/",
+    imgSrc: GBAMImg,
   },
   {
     num: "04",
-    title: "FieldGuide",
+    title: "Ecoprotin",
     description:
-      "Internal knowledge base that syncs with Slack and captures product decisions. Built opinionated editor blocks and granular search filters.",
-    tags: ["Docs", "React Query", "Elasticsearch"],
-    url: "https://progress.dev/fieldguide",
-    imgSrc: ProfilePic,
-  },
-  {
-    num: "05",
-    title: "Pulse UI Kit",
-    description:
-      "A production-ready UI kit for fast-moving marketing teams. Includes themable tokens, 40+ components, and paired Figma styles.",
-    tags: ["Design", "Storybook", "Accessibility"],
-    url: "https://progress.dev/pulse",
-    imgSrc: ProfilePic,
+      "Official website for Ecoprotin, a company that transforms organic waste into high-protein, eco-friendly feed for poultry, fish, and pigs, thus, creating climate-smart value chains and sustainable farming systems.",
+    tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
+    url: "https://www.ecoprotin.com/",
+    imgSrc: Ecoprotin,
   },
 ];
 
