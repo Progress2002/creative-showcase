@@ -52,7 +52,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="px-6 md:px-16 lg:px-24 max-w-4xl mx-auto py-16">
+      className="px-6 md:px-16 lg:px-24 max-w-4xl mx-auto py-10 md:py-16">
       <div className="flex items-end justify-between mb-10">
         <div>
           <p className="section-label">Portfolio</p>
