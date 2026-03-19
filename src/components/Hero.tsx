@@ -85,7 +85,7 @@ const Hero = () => {
       </motion.div>
 
       <Dialog open={contactOpen} onOpenChange={setContactOpen}>
-        <DialogContent className="bg-card border-border max-w-md">
+        <DialogContent className="bg-card border-border max-w-[calc(100%-2rem)] sm:max-w-md rounded-xl">
           <DialogHeader>
             <DialogTitle className="text-foreground text-xl">
               Let's Connect
