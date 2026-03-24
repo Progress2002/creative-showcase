@@ -8,6 +8,7 @@ import Ecoprotin from "@/assets/images/ecoprotin.webp";
 import PRoductListImg from "@/assets/images/product-list.webp";
 import AimsHubImg from "@/assets/images/AimsHubImg.webp";
 import PreviousPortfolioImg from "@/assets/images/PreviousPortfolioImg.webp";
+import AgroplannerImg from "@/assets/images/agroplanner.webp";
 
 export const meteorTrails = [
   { top: "10%", left: "5%", delay: "0s", duration: "9s" },
@@ -19,7 +20,6 @@ export const meteorTrails = [
   { top: "45%", left: "75%", delay: "0.8s", duration: "11s" },
   { top: "55%", left: "25%", delay: "2.6s", duration: "10s" },
 ];
-
 
 type ExperienceItem = {
   company: string;
@@ -86,14 +86,38 @@ type ProjectItem = {
   imgSrc: string;
 };
 
-
 export const projects: ProjectItem[] = [
+  {
+    num: "00",
+    title: "Agroplanner",
+    description:
+      "Farm planning platform that uses intelligent insights to help farmers manage crops, schedules, and decisions effectively.",
+    tags: [
+      "React.js",
+    "TypeScript",
+    "Node.js",
+    "OpenAI API",
+    "Shadcn UI",
+    "Tailwind CSS",
+    "API",
+    ],
+    url: "https://agro-planner-v1.vercel.app",
+    imgSrc: AgroplannerImg,
+  },
   {
     num: "01",
     title: "AIMS Cooperative Hub",
     description:
-      "A robust full-stack platform used by farm cooperatives to manage and track thousands of farmers. Led the development of 80% of the frontend UIs and implemented backend APIs to support real-time data management and reporting. The system improves operational efficiency and enables cooperatives to make data-driven decisions.",
-    tags: ["React.js", "TypeScript", "Node.js", "Chakra UI", "Tailwind CSS", "API", "Zod"],
+      "A platform for farm cooperatives to manage and track thousands of farmers with real-time insights and reporting.",
+    tags: [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "Chakra UI",
+      "Tailwind CSS",
+      "API",
+      "Zod",
+    ],
     url: "https://aims.lbhfarm.com/",
     imgSrc: AimsHubImg,
   },
@@ -101,7 +125,7 @@ export const projects: ProjectItem[] = [
     num: "02",
     title: "BUKSOS Security Operations System",
     description:
-      "A real-time incident reporting system that enables students to submit security alerts with precise location data via geolocation or manual input. The platform allows security personnel to review reports, receive alerts, and navigate directly to incident locations via Google Maps, improving response efficiency.",
+      "Real-time incident reporting system with geolocation tracking to enable faster and more efficient security response.",
     tags: ["React.js", "TypeScript", "Supabase"],
     url: "https://security-alert-system.vercel.app/",
     imgSrc: BUKSOSImg,
@@ -110,7 +134,7 @@ export const projects: ProjectItem[] = [
     num: "03",
     title: "LbHfarm",
     description:
-      "Developed the official website for an agrotech cooperative supporting smallholder farmers across Africa. The platform communicates key services such as input financing, agronomy support, and access to structured markets, with a focus on responsive design and clear user experience.",
+      "Official agrotech platform showcasing input financing, agronomy support, and market access for smallholder farmers.",
     tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
     url: "https://www.lbhfarm.com/",
     imgSrc: LbHfarmImg,
@@ -119,7 +143,7 @@ export const projects: ProjectItem[] = [
     num: "04",
     title: "Ecoprotin",
     description:
-      "Built the official website for a sustainability-focused company transforming organic waste into high-protein animal feed. Focused on delivering a clean, modern interface that effectively communicates their climate-smart solutions and value chain impact.",
+      "Corporate website for a climate-tech company converting organic waste into sustainable high-protein animal feed.",
     tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
     url: "https://www.ecoprotin.com/",
     imgSrc: Ecoprotin,
@@ -128,27 +152,27 @@ export const projects: ProjectItem[] = [
     num: "05",
     title: "GBAM - Graffiti Basketball and Music",
     description:
-      "Developed a visually engaging website for a community-driven platform that leverages sports, music, and culture to promote peace and create opportunities. Emphasized responsive design and engaging layouts to reflect the brand’s vibrant identity.",
+      "Dynamic community platform promoting peace and youth engagement through sports, music, and culture.",
     tags: ["React.js", "Tailwind CSS", "Shadcn UI"],
     url: "https://gbam.ng/",
     imgSrc: GBAMImg,
   },
   {
-  num: "06",
-  title: "Previous Portfolio",
-  description:
-    "An earlier iteration of my personal portfolio website, built to showcase my projects and skills. This version highlights responsive design, component-based architecture, and creative presentation of project work. Served as a foundation for learning best practices and refining modern frontend techniques.",
-  tags: ["React.js", "Tailwind CSS", "Chakra UI"],
-  url: "https://progress2002.vercel.app/",
-  imgSrc: PreviousPortfolioImg,
-},
+    num: "06",
+    title: "Previous Portfolio",
+    description:
+      "Responsive portfolio showcasing projects and frontend expertise with a focus on clean UI and modern design patterns.",
+    tags: ["React.js", "Tailwind CSS", "Chakra UI"],
+    url: "https://progress2002.vercel.app/",
+    imgSrc: PreviousPortfolioImg,
+  },
   {
     num: "07",
     title: "Product List with Cart",
     description:
-      "A responsive product listing application featuring cart functionality with dynamic state management for item selection and quantity tracking. Built with a focus on clean UI, usability, and a smooth shopping experience.",
+      "Interactive product listing app with real-time cart management and seamless user experience.",
     tags: ["React.js", "Tailwind CSS"],
     url: "https://product-list-two-xi.vercel.app/",
     imgSrc: PRoductListImg,
-  }
+  },
 ];
