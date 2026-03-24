@@ -24,8 +24,10 @@ const skills: { label: string; icon: LucideIcon }[] = [
   { label: "GraphQL", icon: Cloud },
   { label: "Redux", icon: Atom },
   { label: "React Native", icon: Cpu },
+  { label: "Chakra UI", icon: Layers },
   { label: "Jest", icon: PenSquare },
   { label: "Electron", icon: Atom },
+  { label: "Shadcn UI", icon: Layers },
 ];
 
 const SkillsMarquee = () => {
