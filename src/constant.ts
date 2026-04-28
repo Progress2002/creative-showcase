@@ -34,10 +34,10 @@ export const experiences: ExperienceItem[] = [
   {
     company: "LbH LC ",
     role: "Full Stack Software Developer",
-    period: "Dec 2023 - Present",
-    bullets: [
-      "Redesigning and continuously improving the company's website while restructuring the frontend architecture to enhance performance, scalability, and overall user experience.",
-      "Actively contributing to the development of web applications, including DESApp, core platform features, a bulk CSV upload system for farmer profiling, and a Credit System for managing loans and resource allocation.",
+    period: "Dec 2023 - Apr 2026",
+     bullets: [
+      "Redesigned and continuously improved the company's website while restructuring the frontend architecture to enhance performance, scalability, and overall user experience.",
+      "Actively contributed to the development of web applications, including DESApp, core platform features, a bulk CSV upload system for farmer profiling, and a Credit System for managing loans and resource allocation.",
     ],
     initial: "LbH",
     logo: LbHLogo,
