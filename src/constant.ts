@@ -5,7 +5,7 @@ import LbHfarmImg from "@/assets/images/lbH_Website.webp";
 import BUKSOSImg from "@/assets/images/BUKSOS.webp";
 import GBAMImg from "@/assets/images/GBAM.webp";
 import Ecoprotin from "@/assets/images/ecoprotin.webp";
-import PRoductListImg from "@/assets/images/product-list.webp";
+import ProductListImg from "@/assets/images/product-list.webp";
 import AimsHubImg from "@/assets/images/AimsHubImg.webp";
 import PreviousPortfolioImg from "@/assets/images/PreviousPortfolioImg.webp";
 import AgroplannerImg from "@/assets/images/agroplanner.webp";
@@ -130,15 +130,15 @@ export const projects: ProjectItem[] = [
     url: "https://security-alert-system.vercel.app/",
     imgSrc: BUKSOSImg,
   },
-  {
-    num: "03",
-    title: "LbHfarm",
-    description:
-      "Official agrotech platform showcasing input financing, agronomy support, and market access for smallholder farmers.",
-    tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
-    url: "https://www.lbhfarm.com/",
-    imgSrc: LbHfarmImg,
-  },
+  // {
+  //   num: "03",
+  //   title: "LbHfarm",
+  //   description:
+  //     "Official agrotech platform showcasing input financing, agronomy support, and market access for smallholder farmers.",
+  //   tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
+  //   url: "https://www.lbhfarm.com/",
+  //   imgSrc: LbHfarmImg,
+  // },
   {
     num: "04",
     title: "Ecoprotin",
@@ -173,6 +173,6 @@ export const projects: ProjectItem[] = [
       "Interactive product listing app with real-time cart management and seamless user experience.",
     tags: ["React.js", "Tailwind CSS"],
     url: "https://product-list-two-xi.vercel.app/",
-    imgSrc: PRoductListImg,
+    imgSrc: ProductListImg,
   },
 ];
