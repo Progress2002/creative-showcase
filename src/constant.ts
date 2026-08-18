@@ -9,6 +9,7 @@ import ProductListImg from "@/assets/images/product-list.webp";
 import AimsHubImg from "@/assets/images/AimsHubImg.webp";
 import PreviousPortfolioImg from "@/assets/images/PreviousPortfolioImg.webp";
 import AgroplannerImg from "@/assets/images/agroplanner.webp";
+import AmazingStartAcademyImg from "@/assets/images/amazingstart.webp";
 
 export const meteorTrails = [
   { top: "10%", left: "5%", delay: "0s", duration: "9s" },
@@ -35,7 +36,7 @@ export const experiences: ExperienceItem[] = [
     company: "LbH LC ",
     role: "Full Stack Software Developer",
     period: "Dec 2023 - Apr 2026",
-     bullets: [
+    bullets: [
       "Redesigned and continuously improved the company's website while restructuring the frontend architecture to enhance performance, scalability, and overall user experience.",
       "Actively contributed to the development of web applications, including DESApp, core platform features, a bulk CSV upload system for farmer profiling, and a Credit System for managing loans and resource allocation.",
     ],
@@ -94,12 +95,12 @@ export const projects: ProjectItem[] = [
       "Farm planning platform that uses intelligent insights to help farmers manage crops, schedules, and decisions effectively.",
     tags: [
       "React.js",
-    "TypeScript",
-    "Node.js",
-    "OpenAI API",
-    "Shadcn UI",
-    "Tailwind CSS",
-    "API",
+      "TypeScript",
+      "Node.js",
+      "OpenAI API",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "API",
     ],
     url: "https://agro-planner-v1.vercel.app",
     imgSrc: AgroplannerImg,
@@ -130,15 +131,21 @@ export const projects: ProjectItem[] = [
     url: "https://security-alert-system.vercel.app/",
     imgSrc: BUKSOSImg,
   },
-  // {
-  //   num: "03",
-  //   title: "LbHfarm",
-  //   description:
-  //     "Official agrotech platform showcasing input financing, agronomy support, and market access for smallholder farmers.",
-  //   tags: ["React.js", "TypeScript", "Chakra UI", "Tailwind CSS"],
-  //   url: "https://www.lbhfarm.com/",
-  //   imgSrc: LbHfarmImg,
-  // },
+  {
+    num: "04",
+    title: "Amazing Start Academy",
+    description:
+      "A modern school website designed to showcase the academy, its programs, facilities, and learning environment while providing an accessible experience for prospective students and parents.",
+    tags: [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Responsive Design",
+      "UI/UX",
+    ],
+    url: "https://www.amazingstartacademy.com.ng/",
+    imgSrc: AmazingStartAcademyImg,
+  },
   {
     num: "04",
     title: "Ecoprotin",
